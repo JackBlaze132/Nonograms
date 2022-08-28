@@ -269,9 +269,9 @@ public class MainGamePanel extends JPanel implements ActionListener {
 
         for (int i = 0;i < 5;i++) {
 
-            String pColumn = "nonograma.pistasColumna" + String.valueOf(aux);
-            String pRow = "nonograma.pistasFila" + String.valueOf(aux);
-            String rRow = "nonograma.tableroFila" + String.valueOf(aux);
+            String pColumn = "nonogram.columnClues" + String.valueOf(aux);
+            String pRow = "nonogram.rowClues" + String.valueOf(aux);
+            String rRow = "nonogram.boardRow" + String.valueOf(aux);
 
             columsClues[i] = file.getProperty(pColumn);
             rowsClues[i] = file.getProperty(pRow);
@@ -319,7 +319,7 @@ public class MainGamePanel extends JPanel implements ActionListener {
                 currentFile = selectedFile;
                 try {
                     fileProperties.load(new FileReader(selectedFile));
-                    puzzleName = fileProperties.getProperty("nonograma.nombreProblema");
+                    puzzleName = fileProperties.getProperty("nonogram.puzzleName");
                     fillValuesList(fileProperties);
                     main.fillColumsClues(columsClues, tilesPanel.giveMatrix());
                     main.fillRowsClues(rowsClues, tilesPanel.giveMatrix());
