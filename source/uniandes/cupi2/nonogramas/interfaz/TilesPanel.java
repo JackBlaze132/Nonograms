@@ -21,13 +21,23 @@ import uniandes.cupi2.nonogramas.mundo.CustomColors;
  */
 public class TilesPanel extends JPanel implements ActionListener{
 
+    /**
+     * New atriibutte of MainInterface type
+     */
+    private MainInterface main;
+
+    /**
+     * Number of current tiles created
+     */
+    private int numButtons;
+
     private static final long serialVersionUID = 1L;
     private static final int numRows = 7;
     private static final int numColums = 7;
     private static final String filledImageRoute = "data/imagenes/casilla_rellena.png";
-    private int numButtons = 0;
     
-    private MainInterface main;
+    
+    
 
     private JButton matrix[][];
 
@@ -54,6 +64,7 @@ public class TilesPanel extends JPanel implements ActionListener{
     public TilesPanel(MainInterface pMain) {
         
         main = pMain;
+        numButtons = 0;
         matrix = new JButton[numRows][numColums];
         buttonList = new ArrayList<>();
         setLayout(new GridLayout(7,7));
