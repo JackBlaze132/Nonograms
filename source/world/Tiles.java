@@ -134,6 +134,12 @@ public class Tiles {
                     addRow = colClue[aux2].charAt(2);
                     matrix [i][j].setIcon(null);
                     matrix [i][j].setText(String.valueOf(addRow));
+                    if (matrix[i][j].getText().equals("0")) {
+                        matrix[i][j].setText("");
+                    }
+                    else {
+                        matrix [i][j].setText(String.valueOf(addRow));
+                    }
                     aux2++;
                 }
             }
