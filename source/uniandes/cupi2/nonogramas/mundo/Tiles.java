@@ -47,8 +47,8 @@ public class Tiles {
     //--------------------------------------------------------------------------------------------------------------
     
     /**
-     * Creates new icon and transform it for a better fit in the gameboard tiles
      * Constructor of the Tiles class
+     * Creates new icon and transform it for a better fit in the gameboard tiles
      * @param pMain Main interface window
      */
     public Tiles(MainInterface pMain){

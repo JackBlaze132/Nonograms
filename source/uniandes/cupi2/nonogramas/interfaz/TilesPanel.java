@@ -31,27 +31,55 @@ public class TilesPanel extends JPanel implements ActionListener{
      */
     private int numButtons;
 
-    private static final long serialVersionUID = 1L;
-    private static final int numRows = 7;
-    private static final int numColums = 7;
-    private static final String filledImageRoute = "data/imagenes/casilla_rellena.png";
-    
-    
-    
-
+    /**
+     * Tiles Array
+     */
     private JButton matrix[][];
 
+    /**
+     * ArrayList that will cointain all the created tiles
+     */
     private ArrayList<JButton> buttonList;
 
-    
-    
-    private CustomColors customColors = new CustomColors();
+    /**
+     * Define the number of rows of the gameboard
+     */
+    private static final int numRows = 7;
 
-    private Border linBorder = BorderFactory.createLineBorder(customColors.myDarkGray());
-	private TitledBorder titledBorder = BorderFactory.createTitledBorder(linBorder, "Game Board");
+    /**
+     * Define the number of columns of the gameboard
+     */
+    private static final int numColums = 7;
 
-    ImageIcon icon = new ImageIcon(filledImageRoute);
-    ImageIcon tile = new ImageIcon(icon.getImage().getScaledInstance(56, 50, Image.SCALE_DEFAULT));
+    /**
+     * Defines the filled tile icon path
+     */
+    private static final String filledImageRoute = "data/imagenes/casilla_rellena.png";
+    
+    /**
+	 * Invokes CustomColors class
+	 */
+    private static final CustomColors customColors = new CustomColors();
+
+    /**
+	 * Line border of myDarkColor Color
+	 */
+    private static final Border linBorder = BorderFactory.createLineBorder(customColors.myDarkGray());
+
+    /**
+	 * Titled border for the options section
+	 */
+	private static final TitledBorder titledBorder = BorderFactory.createTitledBorder(linBorder, "Game Board");
+
+    /**
+     * Defines the filled tile icon after clicking
+     */
+    private static final ImageIcon icon = new ImageIcon(filledImageRoute);
+
+    /**
+     * Creates new icon and transform it for a better fit in the gameboard tiles
+     */
+    private static final ImageIcon tile = new ImageIcon(icon.getImage().getScaledInstance(56, 50, Image.SCALE_DEFAULT));
 
     //--------------------------------------------------------------------------------------------------------------
     // Constructor
