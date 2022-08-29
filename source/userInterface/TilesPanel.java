@@ -199,7 +199,7 @@ public class TilesPanel extends JPanel implements ActionListener{
      * It shows a darker tile after is clciked
      * @param button The current clicked tile icon
      */
-    public void setFilledTile(JButton button){
+    public void setFilledTile(JButton button) {
         button.setIcon(tile);
     }
 
@@ -209,7 +209,7 @@ public class TilesPanel extends JPanel implements ActionListener{
      * If it is blank, the turn it into a filled one after clicking
      * @param button
      */
-    public void changeTileIcon(JButton button){
+    public void changeTileIcon(JButton button) {
        
         if (button.getIcon() == null)
        {
@@ -227,7 +227,7 @@ public class TilesPanel extends JPanel implements ActionListener{
      * @param e Event associated withj clicking a tile
      */
     @Override
-    public void actionPerformed(ActionEvent e){
+    public void actionPerformed(ActionEvent e) {
         
         boolean finishedBoxes = false;
 
