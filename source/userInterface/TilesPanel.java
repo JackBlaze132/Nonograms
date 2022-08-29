@@ -116,12 +116,10 @@ public class TilesPanel extends JPanel implements ActionListener{
                 buttonList.add(button);
                 add(button);
 
-                if (i%2 == 1 && j%2 == 1)
-                {
+                if (i%2 == 1 && j%2 == 1 || i%2 == 0 && j%2 == 0) {
                     button.setBackground(customColors.burntTangarine());
                 }
-                else if (i%2 == 0 && j%2 == 0)
-                {
+                else if (i%2 == 0 && j%2 == 0) {
                     button.setBackground(customColors.burntTangarine());
                 }
                 numButtons++;
@@ -154,11 +152,10 @@ public class TilesPanel extends JPanel implements ActionListener{
                 matrix[i][j].setEnabled(true);
                 setBlankTile(matrix[i][j]);
                 matrix[i][j].setBackground(customColors.orange());
-                if (i%2 == 1 && j%2 == 1)
-                {
+                if (i%2 == 1 && j%2 == 1) {
                     matrix[i][j].setBackground(customColors.tangarine());
                 }
-                else if (i%2 == 0 && j%2 == 0){
+                else if (i%2 == 0 && j%2 == 0) {
                     matrix[i][j].setBackground(customColors.tangarine());
                 }
             }
@@ -176,10 +173,10 @@ public class TilesPanel extends JPanel implements ActionListener{
                 button.setBackground(customColors.orange());
                 button.setIcon(null);
                 button.setEnabled(true);
-                if (i%2 == 1 && j%2 == 1){
+                if (i%2 == 1 && j%2 == 1) {
                     button.setBackground(customColors.tangarine());
                 }
-                else if (i%2 == 0 && j%2 == 0){
+                else if (i%2 == 0 && j%2 == 0) {
                     button.setBackground(customColors.tangarine());
 
                 }
