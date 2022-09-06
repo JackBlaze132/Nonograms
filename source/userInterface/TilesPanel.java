@@ -55,7 +55,7 @@ public class TilesPanel extends JPanel implements ActionListener{
     /**
      * Defines the filled tile icon path
      */
-    private static final String filledImageRoute = "data/imagenes/casilla_rellena.png";
+    private static final String filledImageRoute = "res/images/filled_tile.png";
     
     /**
 	 * Invokes CustomColors class

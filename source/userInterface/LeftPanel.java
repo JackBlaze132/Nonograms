@@ -29,7 +29,7 @@ public class LeftPanel extends JPanel {
 	 */
 	public LeftPanel() {
 		
-		ImageIcon sideBanner = new ImageIcon("data/imagenes/izquierda.png");
+		ImageIcon sideBanner = new ImageIcon("res/images/left.png");
 		setSize(sideBanner.getIconHeight(), sideBanner.getIconWidth());
 		
 		JLabel image = new JLabel("");

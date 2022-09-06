@@ -28,7 +28,7 @@ public class RightPanel extends JPanel {
 	 */
 	public RightPanel()	{
 		
-		ImageIcon sideBanner = new ImageIcon("data/imagenes/derecha alt 2.gif");
+		ImageIcon sideBanner = new ImageIcon("res/images/right.gif");
 		setSize(sideBanner.getIconHeight(), sideBanner.getIconWidth());
 		
 		JLabel image = new JLabel("");
