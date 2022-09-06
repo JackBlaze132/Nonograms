@@ -157,7 +157,7 @@ public class Tiles {
 		int column4 = 5;
 		int column5 = 5;
 
-        icon =  new ImageIcon("data/imagenes/dialog alt 1.gif");
+        icon =  new ImageIcon("res/images/dialog.gif");
 		String[][] answers = main.giveBoardAnswers();
 		String[][] userMatrix =  main.givePlayerMatrix();
 		String temp;
@@ -209,7 +209,7 @@ public class Tiles {
 		int row4 = 5;
 		int row5 = 5;
         
-        icon =  new ImageIcon("data/imagenes/dialog alt 1.gif");
+        icon =  new ImageIcon("res/images/dialog.gif");
 		String[][] answers = main.giveBoardAnswers();
 		String[][] userMatrix =  main.givePlayerMatrix();
 		String temp;
@@ -237,11 +237,11 @@ public class Tiles {
 				}
 			}
 		}
-		message = ">Row 1 has "+row1+" Tiles correct_ \n" +
-				  ">Row 2 has "+row2+" Tiles correct_ \n" +
-				  ">Row 3 has "+row3+" Tiles correct_ \n" +
-				  ">Row 4 has "+row4+" Tiles correct_ \n" +
-				  ">Row 5 has "+row5+" Tiles correct_ \n";
+		message = "> Row 1 has "+row1+" Tiles correct_ \n" +
+				  "> Row 2 has "+row2+" Tiles correct_ \n" +
+				  "> Row 3 has "+row3+" Tiles correct_ \n" +
+				  "> Row 4 has "+row4+" Tiles correct_ \n" +
+				  "> Row 5 has "+row5+" Tiles correct_ \n";
 		title = "Correct Tiles by row";
 
 		JOptionPane.showMessageDialog(main, message, title, JOptionPane.INFORMATION_MESSAGE, icon);

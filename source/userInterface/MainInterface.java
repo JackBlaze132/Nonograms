@@ -58,7 +58,7 @@ public class MainInterface extends JFrame {
 	/**
 	 * creates new favicon icon
 	 */
-	private ImageIcon favicon = new ImageIcon(getClass().getClassLoader().getResource("imagenes/favicon.png"));
+	private ImageIcon favicon = new ImageIcon(getClass().getClassLoader().getResource("images/favicon.png"));
 	
 	/**
 	 * Invokes CustomColors class
