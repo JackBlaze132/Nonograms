@@ -190,9 +190,9 @@ public class Tiles {
         
         int[] row;
         String[][] answers = main.giveBoardAnswers();
-		String[][] userMatrix =  main.givePlayerMatrix();
-		String temp;
-		String userTemp;
+        String[][] userMatrix =  main.givePlayerMatrix();
+        String temp;
+        String userTemp;
         
         row = new int[5];
         icon =  new ImageIcon("res/images/dialog.gif");
