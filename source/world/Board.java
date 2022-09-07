@@ -132,19 +132,6 @@ public class Board {
         if (Arrays.deepEquals(answers, compare)){
             JOptionPane.showMessageDialog(main, message, "Congralutations", JOptionPane.INFORMATION_MESSAGE);
         }
-
-        for (int i = 0; i < 5; i++){
-            for (int j = 0; j < 5;j++){
-                System.out.print(answers[i][j]);
-            }
-        }
-        System.out.println("");
-        for (int i = 0; i < 5; i++){
-            for (int j = 0; j< 5 ; j++){
-                System.out.print(compare[i][j]);
-            }
-        }
-        System.out.println("\n");
     }
 
     /**
