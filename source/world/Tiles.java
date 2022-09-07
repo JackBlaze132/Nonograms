@@ -155,9 +155,9 @@ public class Tiles {
 
         int[] column;
         String[][] answers = main.giveBoardAnswers();
-		String[][] userMatrix =  main.givePlayerMatrix();
-		String temp;
-		String userTemp;
+        String[][] userMatrix =  main.givePlayerMatrix();
+        String temp;
+        String userTemp;
 
         column = new int[5];
         icon =  new ImageIcon("res/images/dialog.gif");
