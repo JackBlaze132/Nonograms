@@ -149,50 +149,35 @@ public class Tiles {
     /**
      * Calculates the number of correct tiles per column
      */
+
+     
     public void getCorrectByColumn() {
 
-        int column1 = 5;
-		int column2 = 5;
-		int column3 = 5;
-		int column4 = 5;
-		int column5 = 5;
-
-        icon =  new ImageIcon("res/images/dialog.gif");
-		String[][] answers = main.giveBoardAnswers();
+        int[] column;
+        String[][] answers = main.giveBoardAnswers();
 		String[][] userMatrix =  main.givePlayerMatrix();
 		String temp;
 		String userTemp;
 
-		for (int i = 0; i < 5; i++) {
-			for( int j = 0; j < 5; j++) {
-				temp = answers[i][j];
+        column = new int[5];
+        icon =  new ImageIcon("res/images/dialog.gif");
+        message = "";
+		
+		for (int j = 0; j < 5; j++) {
+            column[j] = 5;
+
+			for( int i = 0; i < 5; i++) {
+                temp = answers[i][j];
 				userTemp = userMatrix [i][j];
 
-				if ( j == 0 && !temp.equals(userTemp)) {
-					column1 = column1 - 1;
-				}
-				if ( j == 1 && !temp.equals(userTemp)) {
-					column2 = column2 - 1;
-				}
-				if ( j == 2 && !temp.equals(userTemp)) {
-					column3 = column3 - 1;
-				}
-				if ( j == 3 && !temp.equals(userTemp)) {
-					column4 = column4 - 1;
-				}
-				if ( j == 4 && !temp.equals(userTemp)) {
-					column5 = column5 - 1;
-				}
+				if (!temp.equals(userTemp)) {
+					column[j] = column[j] - 1;
+                }
+                
 			}
+           message = message+"> Column "+(j+1)+" has "+column[j]+ " Tiles correct_\n";
 		}
-		message = "> Column 1 has "+column1+" Tiles correct_ \n" +
-				  "> Column 2 has "+column2+" Tiles correct_ \n" +
-				  "> Column 3 has "+column3+" Tiles correct_ \n" +
-				  "> Column 4 has "+column4+" Tiles correct_ \n" +
-				  "> Column 5 has "+column5+" Tiles correct_ \n";
-		
 		title = "Correct Tiles by column";
-		
   
 		JOptionPane.showMessageDialog(main, message, title, JOptionPane.PLAIN_MESSAGE, icon);
 
@@ -203,49 +188,33 @@ public class Tiles {
      */
     public void getCorrectByRow() {
         
-        int row1 = 5;
-		int row2 = 5;
-		int row3 = 5;
-		int row4 = 5;
-		int row5 = 5;
-        
-        icon =  new ImageIcon("res/images/dialog.gif");
-		String[][] answers = main.giveBoardAnswers();
+        int[] row;
+        String[][] answers = main.giveBoardAnswers();
 		String[][] userMatrix =  main.givePlayerMatrix();
 		String temp;
 		String userTemp;
+        
+        row = new int[5];
+        icon =  new ImageIcon("res/images/dialog.gif");
+        message="";
 
 		for (int i = 0; i < 5; i++) {
+            row[i] = 5;
+
 			for( int j = 0; j < 5; j++) {
 				temp = answers[i][j];
 				userTemp = userMatrix [i][j];
 
-				if ( i == 0 && !temp.equals(userTemp)) {
-					row1 = row1 - 1;
+				if ( !temp.equals(userTemp)) {
+					row[i] = row[i] - 1;
 				}
-				if ( i == 1 && !temp.equals(userTemp)) {
-					row2 = row2 - 1;
-				}
-				if ( i == 2 && !temp.equals(userTemp)) {
-					row3 = row3 - 1;
-				}
-				if ( i == 3 && !temp.equals(userTemp)) {
-					row4 = row4 - 1;
-				}
-				if ( i == 4 && !temp.equals(userTemp)) {
-					row5 = row5 - 1;
-				}
-			}
+            }
+            message = message+"> Row "+(i+1)+" has "+row[i]+ " Tiles correct_\n";
 		}
-		message = "> Row 1 has "+row1+" Tiles correct_ \n" +
-				  "> Row 2 has "+row2+" Tiles correct_ \n" +
-				  "> Row 3 has "+row3+" Tiles correct_ \n" +
-				  "> Row 4 has "+row4+" Tiles correct_ \n" +
-				  "> Row 5 has "+row5+" Tiles correct_ \n";
 		title = "Correct Tiles by row";
 
 		JOptionPane.showMessageDialog(main, message, title, JOptionPane.INFORMATION_MESSAGE, icon);
-		
+		 
 	}
 
 }
