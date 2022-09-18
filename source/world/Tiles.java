@@ -160,7 +160,7 @@ public class Tiles {
         String userTemp;
 
         column = new int[5];
-        icon =  new ImageIcon("res/images/dialog.gif");
+        icon =  new ImageIcon(getClass().getClassLoader().getResource("res/images/dialog.gif"));
         message = "";
 		
 		for (int j = 0; j < 5; j++) {
@@ -195,7 +195,7 @@ public class Tiles {
         String userTemp;
         
         row = new int[5];
-        icon =  new ImageIcon("res/images/dialog.gif");
+        icon =  new ImageIcon(getClass().getClassLoader().getResource("res/images/dialog.gif"));
         message="";
 
 		for (int i = 0; i < 5; i++) {
