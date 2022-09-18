@@ -58,7 +58,7 @@ public class MainInterface extends JFrame {
 	/**
 	 * creates new favicon icon
 	 */
-	private ImageIcon favicon = new ImageIcon(getClass().getClassLoader().getResource("images/favicon.png"));
+	private ImageIcon favicon;
 	
 	/**
 	 * Invokes CustomColors class
@@ -79,6 +79,7 @@ public class MainInterface extends JFrame {
 	 */
 	public MainInterface(){
 		
+		favicon = new ImageIcon(getClass().getClassLoader().getResource("images/favicon.png"));
 		board = new Board(this);
 		tiles = new Tiles(this);
 		setLayout(new BorderLayout());
