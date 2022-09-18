@@ -8,7 +8,7 @@ To solve the puzzle you have to pay attention to the rows and columns clues, you
 Simply click the `Load` button and select a `nonogram#.properties` file
 
 ```
-You need to have java 17.0.3 instaleld in your system
+You need to have java 17.0.3 installed in your system
 ```
 
 developed and design by:
