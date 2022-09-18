@@ -55,7 +55,7 @@ public class TilesPanel extends JPanel implements ActionListener{
     /**
      * Defines the filled tile icon path
      */
-    private static final String filledImageRoute = "res/images/filled_tile.png";
+    private static final String filledImageRoute = "images/filled_tile.png";
     
     /**
 	 * Invokes CustomColors class
@@ -75,12 +75,12 @@ public class TilesPanel extends JPanel implements ActionListener{
     /**
      * Defines the filled tile icon after clicking
      */
-    private static final ImageIcon icon = new ImageIcon(filledImageRoute);
+    private ImageIcon icon;
 
     /**
      * Creates new icon and transform it for a better fit in the gameboard tiles
      */
-    private static final ImageIcon tile = new ImageIcon(icon.getImage().getScaledInstance(56, 50, Image.SCALE_DEFAULT));
+    private ImageIcon tile;
 
     //--------------------------------------------------------------------------------------------------------------
     // Constructor
@@ -99,6 +99,8 @@ public class TilesPanel extends JPanel implements ActionListener{
         setLayout(new GridLayout(7,7));
         setBorder(new TitledBorder(titledBorder));
         titledBorder.setTitleColor(customColors.pewter());
+        icon = new ImageIcon(getClass().getClassLoader().getResource(filledImageRoute));
+        tile = new ImageIcon(icon.getImage().getScaledInstance(56, 50, Image.SCALE_DEFAULT));
         
 
         for (int i = 0; i < numRows;i ++)

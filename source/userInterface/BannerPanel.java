@@ -28,7 +28,7 @@ public class BannerPanel extends JPanel {
 	 */
 	public BannerPanel() {
 
-		ImageIcon banner = new ImageIcon("res/images/title.gif");
+		ImageIcon banner = new ImageIcon(getClass().getClassLoader().getResource("images/title.gif"));
 		setSize(banner.getIconHeight(), banner.getIconWidth());
 		
 		JLabel image = new JLabel("");
