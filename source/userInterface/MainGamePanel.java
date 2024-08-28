@@ -186,7 +186,7 @@ public class MainGamePanel extends JPanel implements ActionListener {
         btnLoad = new JButton(" Load");
         btnLoad.setFont(customFonts.fontAwesome());
         btnLoad.setFocusable(false);
-        btnLoad.setPreferredSize(new Dimension(190,30));
+        btnLoad.setPreferredSize(new Dimension(180,30));
         btnLoad.setActionCommand(LOAD);
         btnLoad.addActionListener(this);
         btnLoad.setBackground(customColors.blueCale());

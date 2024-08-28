@@ -139,15 +139,19 @@ public class Board {
      * @return Answer 1 message
      */
     public String method1() {
-        return "Respuesta 1";
+        return "NONOGRAMS\n\n" +
+                ">Developed by:\n" +
+                " Eder Martínez_\n\n" +
+                ">Version 2.1.0";
     }
 
     /**
      * Method for extension 2
      * @return Answer 2 message
      */
-    public String method2() {
-        return "Respuesta 2";
+    public void method2() {
+
+        System.exit(0);
     }
 
 

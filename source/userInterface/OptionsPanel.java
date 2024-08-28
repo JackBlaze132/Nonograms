@@ -15,6 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.border.TitledBorder;
 
 import world.CustomColors;
+import world.CustomFonts;
 
 import javax.swing.border.Border;
 
@@ -66,16 +67,14 @@ public class OptionsPanel extends JPanel implements ActionListener {
 	 * Pop-up window title
 	 */
 	private String title;
-	
+
+
+	private static final CustomFonts customFonts = new CustomFonts();
 	/**
 	 * Command for option 1 button
 	 */
-	private static final String OPTION_1 = "OPTION_1";
 
-	/**
-	 * Command for option 2 button
-	 */
-	private static final String OPTION_2 = "OPTION_2";
+	private static final String ABOUT = "ABOUT";
 
 	/**
 	 * Command for correct by row button
@@ -112,6 +111,7 @@ public class OptionsPanel extends JPanel implements ActionListener {
 	 * @param pMain Indicates it will show in the main nterface
 	 */
 	public OptionsPanel (MainInterface pMain) {
+
 		main = pMain;
 		setBorder(new TitledBorder(titledBorder));
 		setBackground(customColors.myDarkGray());
@@ -190,8 +190,8 @@ public class OptionsPanel extends JPanel implements ActionListener {
         sep.setPreferredSize(new Dimension(10, 30));
     	add(sep, sep2Con);
 		
-		btnOption1 = new JButton("Option 1");
-		btnOption1.setActionCommand(OPTION_1);
+		btnOption1 = new JButton("About");
+		btnOption1.setActionCommand(ABOUT);
 		btnOption1.addActionListener(this);
 		btnOption1.setPreferredSize(new Dimension(195,25));
 		btnOption1.setFocusable(false);
@@ -204,10 +204,9 @@ public class OptionsPanel extends JPanel implements ActionListener {
         sep.setPreferredSize(new Dimension(10, 30));
     	add(sep, sep3Con);
 		
-		btnOption2 = new JButton("Option 2");
-		btnOption2.setActionCommand(OPTION_2);
-		btnOption2.addActionListener(this);
+		btnOption2 = new JButton("Exit");
 		btnOption2.setPreferredSize(new Dimension(195,25));
+		btnOption2.addActionListener(e -> System.exit(0));
 		btnOption2.setFocusable(false);
 		btnOption2.setBackground(customColors.darkButtons());
 		btnOption2.setBorder(BorderFactory.createEmptyBorder());
@@ -226,15 +225,10 @@ public class OptionsPanel extends JPanel implements ActionListener {
 	 */
 	public void actionPerformed(ActionEvent e) {
 
-		if( OPTION_1.equals( e.getActionCommand( )))
+		if( ABOUT.equals( e.getActionCommand( )))
 	    {
 	        main.reqFuncOption1( );
-		}  
-
-	    else if( OPTION_2.equals( e.getActionCommand( )))
-	    {
-	        	main.reqFuncOption2( );
-	    }
+		}
 
 		else if(CORRECT_BY_COLUMN.equals( e.getActionCommand()))
 		{
