@@ -1,5 +1,10 @@
 # Nonograms
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I612K2L0)<br>
+
+
+<div style="text-align: center">
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I612K2L0)
+</div>
 Help Lady Empress with the help of Mrs. Zero solve the puzzles for the International Nonograms Agency
 To solve the puzzle you have to pay attention to the rows and columns clues, you can also check your correct tiles by column or row buttons
 
