@@ -1,6 +1,6 @@
 # Nonograms
 
-<p style="text-align: center">
+<p style="text-align: center!important">
 
 <a href="https://ko-fi.com/I2I612K2L0">
   <img width="300" src="https://ko-fi.com/img/githubbutton_sm.svg" alt="support button">
