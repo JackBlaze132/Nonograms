@@ -1,10 +1,12 @@
 # Nonograms
 
+<p style="text-align: center">
 
-<div style="text-align: center">
+<a href="https://ko-fi.com/I2I612K2L0">
+  <img width="300" src="https://ko-fi.com/img/githubbutton_sm.svg" alt="support button">
+</a>
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I612K2L0)
-</div>
+</p>
 Help Lady Empress with the help of Mrs. Zero solve the puzzles for the International Nonograms Agency
 To solve the puzzle you have to pay attention to the rows and columns clues, you can also check your correct tiles by column or row buttons
 
@@ -21,6 +23,8 @@ developed and design by:
 - Matroska
 - JackBlaze132
 - ST2712
+
+
 
 
 
